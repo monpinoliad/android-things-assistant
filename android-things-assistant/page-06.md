@@ -11,9 +11,9 @@ Select the **OnOff trait** and then press **SAVE**.
 
 Create a new device instance for your updated model using the `INSTANCE_ID` that you added earlier in: `shared/src/main/java/com/example/androidthings/assistant/shared/MyDevice.java`.
 
-You can find your ` **PROJECT_ID** ` in the URL of the Actions console https://console.actions.google.com/project/**project-id**/..., or in the project settings behind the ⚙ button.
+You can find your `PROJECT_ID*` in the URL of the Actions console https://console.actions.google.com/project/**project-id**/..., or in the project settings behind the ⚙ button.
 
-`
+```
 (env) $ google-oauthlib-tool --client-secrets path/to/credentials.json \
                        --scope https://www.googleapis.com/auth/assistant-sdk-prototype \
                        --save
@@ -23,11 +23,11 @@ You can find your ` **PROJECT_ID** ` in the URL of the Actions console https://c
 (env) $ googlesamples-assistant-devicetool --project-id PROJECT_ID register-device \
 --model MODEL_ID --device DEVICE_INSTANCE_ID --client-type SERVICE
 ...
-`
+```
 
 When a Device action command is said, the `AssistResponse` will include a Device action as a serialized JSON payload.
 
-`
+```
 @Override
 public void onNext(AssistResponse value) {
     // ...
@@ -63,18 +63,18 @@ public void onNext(AssistResponse value) {
     }
     // ...
 }
-` 
+```
 
 Create a new method called `handleDeviceAction` which will take the command and parameters and execute the request.
 
-`
+```
 public void handleDeviceAction(String command, JSONObject params)
        throws JSONException, IOException {
     if (command.equals("action.devices.commands.OnOff")) {
         mLed.setValue(params.getBoolean("on"));
     }
 }    
-`
+```
 
 *User: "Turn on"*
 
@@ -82,9 +82,6 @@ public void handleDeviceAction(String command, JSONObject params)
 
 You can easily change the LED actuated by the device actions to something else, by opening a new Gpio device and referring to the table below:
 
-|RED LED (above Button A)| |GPIO2_IO02|
----------------------------------------
-|GREEN LED (above Button B)| |GPIO2_IO00|
----------------------------------------
-|BLUE LED (above Button C)| |GPIO2_IO05|
----------------------------------------
+RED LED (above Button A)    GPIO2_IO02  
+GREEN LED (above Button B)  GPIO2_IO00  
+BLUE LED (above Button C)   GPIO2_IO05
