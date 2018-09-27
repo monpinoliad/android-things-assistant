@@ -10,20 +10,19 @@
 This project contains all of the code you need to have a fully functioning Assistant.
 
 > The solutions to each step of the codelab are organized by folders:  
-    - **step1-start-here** — Initial project  
-    - **step2-volume-control** — Solution for "Add Volume Control"  
-    - **step3-builtin-device-actions** — Solution for "Add "  
-    - **step4-device-actions** — Solution for "Add Local Device actions"  
-
-> Each folder is implemented as a separate Android Studio module. The **shared** module contains common code for each step.
+        - **step1-start-here** — Initial project  
+        - **step2-volume-control** — Solution for "Add Volume Control"  
+        - **step3-builtin-device-actions** — Solution for "Add "  
+        - **step4-device-actions** — Solution for "Add Local Device actions"  
+Each folder is implemented as a separate Android Studio module. The **shared** module contains common code for each step.
 
 ### Set the DeviceConfig
 
 Before you run the project, you will need to update the app with the device model and instance ids that you registered. Open up `shared/src/main/java/com/example/androidthings/assistant/shared/MyDevice.java`. Update the values of `MODEL_ID` and `INSTANCE_ID`.
 
 The `MODEL_ID` should be the model id created using the Actions Console. The `INSTANCE_ID` should be a unique identifier for each device.
-`
 
+`
 public class MyDevice {
     public static final String MODEL_ID = "model-id-from-the-action-console";
     public static final String INSTANCE_ID = "some-identifier-unique-to-your-project";
@@ -34,13 +33,10 @@ public class MyDevice {
 
 If you have more than one device connected, select the board that start with Iot_ > from the device chooser dialog.
 
-> #### Permissions on Android Things
-
-> Unlike on regular Android, in Android Things permissions declared in the manifest are granted without requiring the user intervention.
-
-> However, the permissions in the dangerous list [of this document](https://www.google.com/url?q=https://developer.android.com/guide/topics/permissions/overview.html%23dangerous_permissions&sa=D&ust=1523434137580000&usg=AFQjCNHvIiyUScOjASsbJ9xaIe4hSANQxQ), are only granted in the Android Things console, or if use a special flag when installing the app (flag "-g" on "adb install").
-
-> Android Studio 3.0 and later will handle this automatically when it detects that you are installing on an Android Things device, so you only need to add the permission request in AndroidManifest.xml.
+> #### Permissions on Android Things  
+Unlike on regular Android, in Android Things permissions declared in the manifest are granted without requiring the user intervention.  
+However, the permissions in the dangerous list [of this document](https://www.google.com/url?q=https://developer.android.com/guide/topics/permissions/overview.html%23dangerous_permissions&sa=D&ust=1523434137580000&usg=AFQjCNHvIiyUScOjASsbJ9xaIe4hSANQxQ), are only granted in the Android Things console, or if use a special flag when installing the app (flag "-g" on "adb install").  
+Android Studio 3.0 and later will handle this automatically when it detects that you are installing on an Android Things device, so you only need to add the permission request in AndroidManifest.xml.
 
 5. Select the **Logcat** tab (typically at the bottom of the window) to see the logcat output inside Android Studio.
 
