@@ -46,7 +46,7 @@ $ source env/bin/activate
 
 ```
 (env) $ cd <project-directory-name>
-\# Run the tool.
+# Run the tool.
 (env) $ google-oauthlib-tool --client-secrets path/to/credentials.json \
                        --credentials shared/src/main/res/raw/credentials.json \
                        --scope https://www.googleapis.com/auth/assistant-sdk-prototype \
