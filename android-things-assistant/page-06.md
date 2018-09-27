@@ -82,6 +82,6 @@ public void handleDeviceAction(String command, JSONObject params)
 
 You can easily change the LED actuated by the device actions to something else, by opening a new Gpio device and referring to the table below:
 
-RED LED (above Button A)    GPIO2_IO02  
-GREEN LED (above Button B)  GPIO2_IO00  
-BLUE LED (above Button C)   GPIO2_IO05
+RED LED (above Button A)    `GPIO2_IO02`  
+GREEN LED (above Button B)  `GPIO2_IO00`  
+BLUE LED (above Button C)   `GPIO2_IO05`
