@@ -6,7 +6,7 @@ To ensure your Cloud shell has the latest versions of the Cloud IoT Core API ins
 gcloud components update
 ```
 
-    You will need to know the __project id__ value when you run the client and server programs. For the Cloud Shell, the environment variable `${DEVSHELL_PROJECT_ID:-Cloud Shell}` is populated with your current __project id__ after you have set it to your Cloud IoT project.
+> You will need to know the __project id__ value when you run the client and server programs. For the Cloud Shell, the environment variable `${DEVSHELL_PROJECT_ID:-Cloud Shell}` is populated with your current __project id__ after you have set it to your Cloud IoT project.
 
 Open the Google Cloud Console and enable the API if it has not already been enabled on your Kiosk or Google account.
 
@@ -39,7 +39,7 @@ gcloud iot registries create tour-registry \
 Next, you will need to generate RSA public and private keys that will be used for authenticating your virtual device when it connects.
 
 
-	__Important:__ Your __private__ key should never be transmitted or stored anywhere other than on a device and should only be used by the device to generate an authorization credential.
+> __Important:__ Your __private__ key should never be transmitted or stored anywhere other than on a device and should only be used by the device to generate an authorization credential.
 
 ```
 openssl req -x509 -newkey rsa:2048 -days 3650 -keyout rsa_private.pem \

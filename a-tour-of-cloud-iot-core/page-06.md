@@ -28,7 +28,7 @@ python cloudiot_pubsub_example_mqtt_device.py \
 
 When you connect the device, it will show and report its temperature, which increases when the fan is turned off. If the fan is enabled, the virtual device's temperature will decrease. Because the device is controlled from the server, which is analyzing the stream of incoming sensor data and making this decision for it, the device does not need to be aware of the conditions for enabling or disabling its fan.
 
-	__Note:__ If you are seeing an error indicating "Out of Memory" this usually means that one of the connection parameters is incorrect. Make sure that the `${DEVSHELL_PROJECT_ID:-Cloud Shell}` environment variable is correctly set (Step 4) and check that you are using the correct device ID and registry ID when invoking the sample app.
+> __Note:__ If you are seeing an error indicating "Out of Memory" this usually means that one of the connection parameters is incorrect. Make sure that the `${DEVSHELL_PROJECT_ID:-Cloud Shell}` environment variable is correctly set (Step 4) and check that you are using the correct device ID and registry ID when invoking the sample app.
 
 The following section shows the output of the server that is subscribed to the telemetry events from the device.
 

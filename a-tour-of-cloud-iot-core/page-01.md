@@ -6,7 +6,7 @@ Cloud IoT Core is a fully managed service that allows you to easily and securely
 
 This codelab gives you a hands-on walkthrough to setting up and configuring IoT devices using Cloud IoT Core. You will transmit telemetry messages from a device and the device will respond to configuration changes from a server based on real-time data.
 
-    Looking for more? Check out the [Building for Enterprise](https://www.youtube.com/watch?v=ETWhOWvqH5E) and [IoT and Cloud for Industrial Applications](https://www.youtube.com/watch?v=ZFu5gpGEYj0) from Google I/O 2017. You can also [listen](https://www.gcppodcast.com/post/episode-101-iot-core/) to the Google Cloud Platform Podcast episode on Cloud IoT Core. You can also [learn how to improve IoT security](https://www.youtube.com/watch?v=A32RFbkozFc) by securing the authentication between your device and Google Cloud IoT.
+> Looking for more? Check out the [Building for Enterprise](https://www.youtube.com/watch?v=ETWhOWvqH5E) and [IoT and Cloud for Industrial Applications](https://www.youtube.com/watch?v=ZFu5gpGEYj0) from Google I/O 2017. You can also [listen](https://www.gcppodcast.com/post/episode-101-iot-core/) to the Google Cloud Platform Podcast episode on Cloud IoT Core. You can also [learn how to improve IoT security](https://www.youtube.com/watch?v=A32RFbkozFc) by securing the authentication between your device and Google Cloud IoT.
 
 ### What you'll build
 
