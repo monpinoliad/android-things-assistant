@@ -10,10 +10,11 @@
 This project contains all of the code you need to have a fully functioning Assistant.
 
     The solutions to each step of the codelab are organized by folders:  
-    - **step1-start-here** — Initial project  
-    - **step2-volume-control** — Solution for "Add Volume Control"  
-    - **step3-builtin-device-actions** — Solution for "Add "  
-    - **step4-device-actions** — Solution for "Add Local Device actions"  
+    
+        step1-start-here — Initial project  
+        step2-volume-control — Solution for "Add Volume Control"  
+        step3-builtin-device-actions — Solution for "Add "  
+        step4-device-actions — Solution for "Add Local Device actions"  
     
     Each folder is implemented as a separate Android Studio module. The **shared** module contains common code for each step.
 
@@ -23,12 +24,12 @@ Before you run the project, you will need to update the app with the device mode
 
 The `MODEL_ID` should be the model id created using the Actions Console. The `INSTANCE_ID` should be a unique identifier for each device.
 
-`
+```
 public class MyDevice {
     public static final String MODEL_ID = "model-id-from-the-action-console";
     public static final String INSTANCE_ID = "some-identifier-unique-to-your-project";
 }
-`
+```
 
 4. Deploy the app to the device by selecting **Run → Run 'step1-start-here'** from the menu.
 
@@ -46,7 +47,7 @@ public class MyDevice {
 
 The project has successfully launched on the device if you can see the following startup message in the log:
 
-`... D AssistantActivity: Starting Assistant demo`
+   ```... D AssistantActivity: Starting Assistant demo```
 
 ### Send a query
 
