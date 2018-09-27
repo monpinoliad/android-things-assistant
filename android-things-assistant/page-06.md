@@ -11,7 +11,7 @@ Select the **OnOff trait** and then press **SAVE**.
 
 Create a new device instance for your updated model using the `INSTANCE_ID` that you added earlier in: `shared/src/main/java/com/example/androidthings/assistant/shared/MyDevice.java`.
 
-You can find your `PROJECT_ID*` in the URL of the Actions console https://console.actions.google.com/project/**project-id**/..., or in the project settings behind the ⚙ button.
+You can find your `PROJECT_ID*` in the URL of the Actions console ht<i></i>tps://console.actions.google.com/project/**project-id**/..., or in the project settings behind the ⚙ button.
 
 ```
 (env) $ google-oauthlib-tool --client-secrets path/to/credentials.json \
