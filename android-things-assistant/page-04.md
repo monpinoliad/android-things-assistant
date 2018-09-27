@@ -16,7 +16,7 @@ This project contains all of the code you need to have a fully functioning Assis
         step3-builtin-device-actions — Solution for "Add "  
         step4-device-actions — Solution for "Add Local Device actions"  
     
-    Each folder is implemented as a separate Android Studio module. The **shared** module contains common code for each step.
+    Each folder is implemented as a separate Android Studio module. The shared module contains common code for each step.
 
 ### Set the DeviceConfig
 
