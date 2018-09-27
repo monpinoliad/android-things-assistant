@@ -12,7 +12,9 @@ The [Google Assistant SDK](https://developers.google.com/assistant/sdk/) lets yo
 ### **What you will build**
 
 <img src="https://codelabs.developers.google.com/codelabs/androidthings-assistant/img/81a8bf67571118b9.png" width="250" height="150" align="right" >
-In this codelab, you're going to use Android Things and the Google Assistant SDK to build your own custom Google Assistant device.  
+
+In this codelab, you're going to use Android Things and the Google Assistant SDK to build your own custom Google Assistant device.
+
 It will use a button to trigger a microphone and play back the Assistant answer on an external speaker.
 
 ---
