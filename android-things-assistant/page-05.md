@@ -16,11 +16,11 @@ Modify the `AssistantActivity` to:
 
 1. Add a new 1mVolumePercentage1 field to the 1AssistantActivity1 class.
 
-`private static int mVolumePercentage = 100;`
+   ```private static int mVolumePercentage = 100;```
 
 2. Update the `AssistConfig` to replace `ASSISTANT_AUDIO_RESPONSE_CONFIG` with a new `AudioOutConfig` containing the new volume parameter. This will be used to establish the current volume, allowing you to change it later.
 
-`
+```
 AssistConfig.Builder converseConfigBuilder = AssistConfig.newBuilder()
                     .setAudioInConfig(ASSISTANT_AUDIO_REQUEST_CONFIG)
                     .setAudioOutConfig(AudioOutConfig.newBuilder()
@@ -32,13 +32,13 @@ AssistConfig.Builder converseConfigBuilder = AssistConfig.newBuilder()
                             .setDeviceModelId(MyDevice.MODEL_ID)
                             .setDeviceId(MyDevice.INSTANCE_ID)
                             .build());
-`
+```
 
 3. In the `mAssistantResponseObserver.onNext(AssistResponse value)` method, handle volume percentage change from the `AssistResult` of incoming `AssistResponse` messages.
 
 4. Use the [AudioTrack.setVolume](https://developer.android.com/reference/android/media/AudioTrack.html#setVolume(float)) method to update the volume of the assistant playback accordingly. The volume must be scaled to be in proportion to the `AudioTrack` limits.
 
-`
+```
 private StreamObserver<AssistResponse> mAssistantResponseObserver =
             new StreamObserver<AssistResponse>() {
         @Override
@@ -57,7 +57,7 @@ private StreamObserver<AssistResponse> mAssistantResponseObserver =
         }
         // ...
     };
-`
+```
 
 > This volume will reset whenever you restart the device. If you add [SharedPreferences](https://developer.android.com/training/basics/data-storage/shared-preferences.html) to save this new volume, your volume can persist between power cycles.
 
