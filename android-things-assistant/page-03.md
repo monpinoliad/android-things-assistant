@@ -1,5 +1,5 @@
-##3. Set up Assistant SDK Device
-###Get the sample
+## 3. Set up Assistant SDK Device
+### Get the sample
 
 Click the following link to download the sample for this codelab on your development machine:
 
@@ -11,7 +11,7 @@ Click the following link to download the sample for this codelab on your develop
 
 Unpack the downloaded zip file.
 
-###Configure the credentials
+### Configure the credentials
 
 1. Enable the following [Activity controls](https://myaccount.google.com/activitycontrols) in the Google Account you plan to use with the Assistant:
 	- Web & App Activity
@@ -46,7 +46,7 @@ $ source env/bin/activate
 
 ```
 (env) $ cd <project-directory-name>
-\# Run the tool.
+# Run the tool.
 (env) $ google-oauthlib-tool --client-secrets path/to/credentials.json \
                        --credentials shared/src/main/res/raw/credentials.json \
                        --scope https://www.googleapis.com/auth/assistant-sdk-prototype \
