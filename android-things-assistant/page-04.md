@@ -32,7 +32,7 @@ public class MyDevice {
 
 4. Deploy the app to the device by selecting **Run → Run 'step1-start-here'** from the menu.
 
-If you have more than one device connected, select the board that start with Iot_ > from the device chooser dialog.
+> If you have more than one device connected, select the board that start with `Iot_ >` from the device chooser dialog.
 
 #### Permissions on Android Things
     
